@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maindiv{
+            border :transparent;
+            width: 500px;
+            margin: auto;
+            border-radius: 30px;
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            
+        }
+        #signupbox{
+            display: grid;
+            text-align: center;
+        }
+        #imgdiv{
+            border:transparent;
+            height: 200px;
+            width: 70%;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        button{
+            border-radius: 25px;
+            width: 200px;
+            margin: auto;
+            margin-top: 20px;
+
+
+        }
+        input{
+            border-radius: 20px;
+            border: transparent;
+            text-align: left;
+            width: 80%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            margin: auto;
+        }
+        label{
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body style="background-image:url(https://globalprimenews.com/wp-content/uploads/2020/05/banner.3006cc04-777x437.png) ; background-repeat: no-repeat;
+background-size:cover;">
+    <div id = "maindiv">
+    <div id="imgdiv">
+        <img style="margin: auto;" src="data:image/png;base64,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" height="60%" width="100%"/>
+    </div>
+    <div id = "signupbox">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Sign Up</h1>
+        <label>Enter Email</label>
+        <input id ="email" type="text" placeholder="Enter Your Mail"/>
+        <label>Password</label>
+        <input id="password" type="text" placeholder="Enter Password" />
+        <label>username</label>
+        <input id="user" type="text" placeholder="Enter Username" />
+        <label>Mobile Number</label>
+        <input id="mobile" type="number" placeholder="Enter Mobile Number" />
+        <button>Sign UP</button>
+    </div>
+</div>
+</body>
+</html>
+
+
+<script>
+
+document.querySelector("button").addEventListener("click",signUp)
+var userData=JSON.parse(localStorage.getItem("FraazoosignupDatabase"))||[]
+
+function signUp(){
+    var email = document.querySelector("#email").value
+    var password = document.querySelector("#password").value
+    var username = document.querySelector("#user").value
+    var mobile = document.querySelector("#mobile").value
+
+    // console.log(email,password,username,mobile)
+
+    var userCred = {
+        email:email,
+        password:password,
+        username:username,
+        mobile:mobile,
+    }
+
+    console.log(userCred)
+    userData.push(userCred)
+    localStorage.setItem("FraazoosignupDatabase",JSON.stringify(userData))
+
+}
+</script>
