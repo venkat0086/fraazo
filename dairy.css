@@ -1,0 +1,90 @@
+#sear ~ div {
+  margin-top: 25px;
+}
+.nav {
+  height: 80px;
+  display: flex;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.left {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+}
+img {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#image {
+  padding: 15px;
+}
+#sear {
+  width: 50%;
+  margin: 5px;
+}
+input[type="search"] {
+  width: 100%;
+  padding: 15px 15px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 25px;
+}
+#second {
+  display: grid;
+  width: 95%;
+  grid-template-rows: 450px;
+  grid-template-columns: 250px repeat(1, 1fr);
+  grid-gap: 20px;
+  margin: auto;
+  margin-top: 2%;
+}
+#second > div {
+  grid-gap: 20px;
+}
+#prodImage {
+  background-color: #f9f9f9f9;
+}
+#inText {
+  margin-left: 10px;
+}
+#addBtn {
+  padding: 8px 28px;
+  border-radius: 25px;
+  margin-left: 100px;
+  background-color: transparent;
+  border: 1px solid green;
+  color: green;
+}
+#addBtn:hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+#items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5%;
+}
+#items > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+span {
+  font-weight: bold;
+}
+#cate {
+  font-size: 20px;
+}
+#cate > div {
+  padding: 15px 25px;
+  border-bottom: 1px solid grey;
+}
+#sear ~ div:hover {
+  cursor: pointer;
+  color: red;
+}
