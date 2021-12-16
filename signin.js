@@ -12,7 +12,7 @@ function signIn(event) {
     }
   }
   if (count > 0) {
-    window.location.href = "prod.html";
+    window.location.href = "index.html";
     window.alert("You Login Successful");
   } else {
     window.alert("Invalid Login Credentials");
