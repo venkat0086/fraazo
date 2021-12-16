@@ -36,7 +36,7 @@ input[type="search"] {
 }
 #second {
   display: grid;
-  width: 95%;
+  width: 98%;
   grid-template-rows: 450px;
   grid-template-columns: 250px repeat(1, 1fr);
   grid-gap: 20px;
@@ -44,7 +44,7 @@ input[type="search"] {
   margin-top: 2%;
 }
 #second > div {
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 #prodImage {
   background-color: #f9f9f9f9;
@@ -59,6 +59,7 @@ input[type="search"] {
   background-color: transparent;
   border: 1px solid green;
   color: green;
+  margin-bottom: 15px;
 }
 #addBtn:hover {
   color: white;
