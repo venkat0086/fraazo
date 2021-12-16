@@ -1,0 +1,68 @@
+#main {
+  width: 30%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#email,
+#password {
+  width: 70%;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#btn {
+  padding: 20px 50px;
+  background-color: #44c6ac;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#btn:hover {
+  cursor: pointer;
+  box-shadow: white 0px 5px 15px;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://globalprimenews.com/wp-content/uploads/2020/05/banner.3006cc04-777x437.png");
+}
+#main > div,
+h2 {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#img,
+img {
+  width: 180px;
+  height: 80px;
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  #main {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  #main {
+    width: 60%;
+  }
+}
+h2 {
+  margin-top: 2px;
+}
+form {
+  margin-top: 20px;
+}
