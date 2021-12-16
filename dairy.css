@@ -22,6 +22,9 @@ img {
 #image {
   padding: 15px;
 }
+#image:hover {
+  cursor: pointer;
+}
 #sear {
   width: 50%;
   margin: 5px;

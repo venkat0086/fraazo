@@ -10,3 +10,6 @@ function gotocart() {
 function gotologin() {
   window.location.href = "signin.html";
 }
+function gotoindex() {
+  window.location.href = "index.html";
+}
