@@ -56,6 +56,9 @@ img {
   width: 180px;
   height: 80px;
 }
+#img:hover {
+  cursor: pointer;
+}
 body {
   background-repeat: no-repeat;
   background-size: cover;
