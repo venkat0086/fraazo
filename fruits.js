@@ -44,7 +44,8 @@ fruitData=[
 ]
 
 localStorage.setItem("fruitData",JSON.stringify(fruitData));
-   var cart=[];
+      
+   var cart= JSON.parse(localStorage.getItem("cartData"))||[];
 
 fruitData.map(function(ele, index){
     var div = document.createElement('div');
@@ -73,6 +74,10 @@ fruitData.map(function(ele, index){
     var btn = document.createElement('div');
     btn.setAttribute('class', 'btn');
     btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
+    btn.addEventListener("click", function(){
+        add(index);
+    });
+
     botBox.append(priceBox, btn)
    
     var display = document.querySelector('#display');
@@ -81,7 +86,8 @@ fruitData.map(function(ele, index){
 
     
 })
-document.querySelector(".btn").addEventListener("click",add);
+
 function add(index){
-    console.log("here");
+    cart.push(fruitData[index]);
+    localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
