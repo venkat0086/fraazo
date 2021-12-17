@@ -44,8 +44,9 @@ fruitData=[
 ]
 
 localStorage.setItem("fruitData",JSON.stringify(fruitData));
+   var cart=[];
 
-fruitData.map(function(ele){
+fruitData.map(function(ele, index){
     var div = document.createElement('div');
 
     var img = document.createElement('img');
@@ -73,10 +74,14 @@ fruitData.map(function(ele){
     btn.setAttribute('class', 'btn');
     btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
     botBox.append(priceBox, btn)
-
+   
     var display = document.querySelector('#display');
     div.append(img,nameBox,botBox);
     display.append(div);
 
-    console.log(ele);
+    
 })
+document.querySelector(".btn").addEventListener("click",add);
+function add(index){
+    console.log("here");
+}
