@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+aside {
+    width: 17%;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+section {
+    width: 83%;
+}
+
+#indicator {
+    padding-top: 20px;
+}
+
+#container1 {
+    width: 85%;
+    margin: auto;
+}
+
+#display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#display>div {
+    border: #eeecec solid 1px;
+    box-shadow: 0;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+}
+
+#display>div:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    ;
+}
+
+img {
+    width: 100%;
+    background-color: #F9F9F9;
+}
+
+.namebox {
+    padding-left: 15px;
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+    margin-top: 12px;
+}
+
+.botbox {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    margin-top: 10px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    height: 25px;
+    color: #5DC6AD;
+    background: transparent;
+    border: #5DC6AD solid 1px;
+    border-radius: 20px;
+    padding: 4px 15px;
+    font-size: 13px;
+    height: 20px;
+    width: 50px
+}
+
+.btn:hover {
+    background: #5DC6AD;
+    color: white;
+}
+
+.weight {
+    font-size: 14px;
+    color: rgb(112, 111, 111);
+}
+
+.price {
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+}
+
+#type {
+    font-size: 18px;
+    letter-spacing: px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#indicator {
+    font-size: 14px;
+    letter-spacing: px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: rgb(43, 43, 43);
+}
+
+#home {
+    color: rgb(156, 156, 156);
+}
+
+.side {
+    padding: 15px 25px;
+    border-bottom: rgb(156, 156, 156) solid 1px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+}
+
+.side-f {
+    border-bottom: rgb(156, 156, 156) solid 1px;
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+}
+
+#plus {
+    font-size: 13px;
+    color: #5DC6AD;
+}
