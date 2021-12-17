@@ -7,6 +7,12 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+#content {
+  width: 100%;
+  height: 142.5px;
+  border: transparent;
+  margin-top: 10px;
+}
 .adv {
   display: flex;
   height: 350px;
@@ -106,6 +112,9 @@
   width: 100%;
   height: 70%;
 }
+#btmimg {
+  background-color: transparent;
+}
 #itemsdry {
   display: flex;
   height: 400px;
@@ -132,7 +141,6 @@
   display: flex;
   height: 400px;
   margin-top: 50px;
-  
 }
 #itemsf > div {
   margin: auto;
@@ -152,12 +160,10 @@
   height: 70%;
 }
 
-
 #itemsv {
   display: flex;
   height: 400px;
   margin-top: 50px;
-  
 }
 #itemsv > div {
   margin: auto;
@@ -180,18 +186,15 @@
   display: flex;
   height: 400px;
   margin-top: 50px;
-  
 }
 #itemsh > div {
-  
   margin-right: 20px;
   padding: auto;
   border-radius: 4px;
   height: 100%;
- justify-content: left;
+  justify-content: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 1s;
-  
 }
 #itemsh > div:hover {
   transform: scale(1.1);
@@ -204,18 +207,15 @@
   display: flex;
   height: 400px;
   margin-top: 50px;
-  
 }
 #itemsherb > div {
-  
   margin-right: 20px;
   padding: auto;
   border-radius: 4px;
   height: 100%;
- justify-content: left;
+  justify-content: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 1s;
-  
 }
 #itemsherb > div:hover {
   transform: scale(1.1);
@@ -228,18 +228,15 @@
   display: flex;
   height: 400px;
   margin-top: 50px;
-  
 }
 #itemsd > div {
-  
   margin-right: 20px;
   padding: auto;
   border-radius: 4px;
   height: 100%;
- justify-content: left;
+  justify-content: left;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 1s;
-  
 }
 #itemsd > div:hover {
   transform: scale(1.1);
@@ -250,16 +247,17 @@
 }
 #specification {
   display: grid;
-  grid-template-columns: repeat(4, 360px);
-  height: 800px;
-  grid-gap: 20px;
+  width: 90%;
+  grid-template-columns: repeat(4, 300px);
+  height: 580px;
+  grid-gap: 10px;
 }
 #specification > div {
   border-radius: 4px;
 }
-#specification > div > img {
-  width: 360px;
-  height: 385px;
+#cateimg {
+  width: 200px;
+  height: 200px;
 }
 #about {
   background-color: #165241;
@@ -273,224 +271,225 @@
 }
 
 #sear ~ div {
-margin-top: 25px;
+  margin-top: 25px;
+  font-size: 18px;
 }
 .nav {
-height: 100px;
-display: flex;
-margin: auto;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-/* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  height: 80px;
+  display: flex;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
 }
 .left {
-display: flex;
-width: 100%;
-height: 100%;
-font-size: 20px;
-/* border: 1px solid red; */
-justify-content: space-around;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  /* border: 1px solid red; */
+  justify-content: space-around;
 }
-img {
-height: 100%;
-/* border: 1px solid red; */
+#logoimg {
+  height: 100%;
+  background-color: transparent;
+  /* border: 1px solid red; */
 }
 #image {
-padding: 15px;
+  padding: 15px;
 }
 #image:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 #sear {
-width: 50%;
-margin: 5px;
+  width: 50%;
+  margin: 5px;
 }
 input[type="search"] {
-width: 100%;
-padding: 15px 15px;
-margin-top: 10px;
-border: 1px solid grey;
-background-color: transparent;
-border-radius: 25px;
+  width: 100%;
+  padding: 15px 15px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 25px;
 }
 #cate {
-font-size: 20px;
+  font-size: 20px;
 }
 #cate > div {
-padding: 15px 25px;
-border-bottom: 1px solid grey;
+  padding: 15px 25px;
+  border-bottom: 1px solid grey;
 }
 #sear ~ div:hover {
-cursor: pointer;
-color: red;
+  cursor: pointer;
+  color: red;
 }
-#heading{
-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-display: flex;
-align-items: baseline;
+#heading {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  display: flex;
+  align-items: baseline;
 }
-#heading>h1{
-font-family: Quicksand, sans-serif;
-font-size: 30px;
-color: rgba(0, 0, 0, 0.85);
-font-weight: 100;
-
+#heading > h1 {
+  font-family: Quicksand, sans-serif;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 100;
 }
-#heading>h1+h4{
-color: #ff864b;
-font-family:Quicksand, sans-serif;
-font-size: 16px;
-font-weight: lighter;
-
+#heading > h1 + h4 {
+  color: #ff864b;
+  font-family: Quicksand, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
 }
-#heading>h1+h4:hover{
+#heading > h1 + h4:hover {
   color: #83cfb0;
   cursor: pointer;
-  }
-@media only screen and (min-width: 0px) and (max-width: 375px) {
-.nav {
-width: 100%;
 }
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .nav {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 376px) and (max-width: 768px) {
-.nav {
-width: 100%;
-}
+  .nav {
+    width: 100%;
+  }
 }
 body {
-padding: 0;
-margin: 0;
-font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 #container {
-width: 90%;
-margin: auto;
-display: flex;
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 
 aside {
-width: 17%;
-padding-right: 20px;
-padding-top: 40px;
+  width: 17%;
+  padding-right: 20px;
+  padding-top: 40px;
 }
 
 section {
-width: 83%;
+  width: 83%;
 }
 
 #indicator {
-padding-top: 20px;
+  padding-top: 20px;
 }
 
 #container1 {
-width: 85%;
-margin: auto;
+  width: 85%;
+  margin: auto;
 }
 
 #display {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
-#display>div {
-border: #eeecec solid 1px;
-box-shadow: 0;
-transition: box-shadow 0.5s;
-border-radius: 5px;
+#display > div {
+  border: #eeecec solid 1px;
+  box-shadow: 0;
+  transition: box-shadow 0.5s;
+  border-radius: 5px;
 }
 
-#display>div:hover {
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-;
+#display > div:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-img{
-width: 100%;
-background-color: #F9F9F9;
+img {
+  width: 100%;
+  background-color: #f9f9f9;
 }
 
 .namebox {
-padding-left: 15px;
-font-size: 16px;
-color: rgb(43, 43, 43);
-margin-top: 12px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: rgb(43, 43, 43);
+  margin-top: 12px;
 }
 
 .botbox {
-display: flex;
-justify-content: space-between;
-padding-left: 15px;
-padding-right: 15px;
-align-items: center;
-margin-top: 10px;
-line-height: 20px;
-margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  margin-top: 10px;
+  line-height: 20px;
+  margin-bottom: 15px;
 }
 
 .btn {
-height: 25px;
-color: #5DC6AD;
-background: transparent;
-border: #5DC6AD solid 1px;
-border-radius: 20px;
-padding: 4px 15px;
-font-size: 13px;
-height: 20px;
-width: 50px
+  height: 25px;
+  color: #5dc6ad;
+  background: transparent;
+  border: #5dc6ad solid 1px;
+  border-radius: 20px;
+  padding: 4px 15px;
+  font-size: 13px;
+  height: 20px;
+  width: 50px;
 }
 
 .btn:hover {
-background: #5DC6AD;
-color: white;
+  background: #5dc6ad;
+  color: white;
+  cursor: pointer;
 }
 
 .weight {
-font-size: 14px;
-color: rgb(112, 111, 111);
+  font-size: 14px;
+  color: rgb(112, 111, 111);
 }
 
 .price {
-font-size: 16px;
-color: rgb(43, 43, 43);
+  font-size: 16px;
+  color: rgb(43, 43, 43);
 }
 
 #type {
-font-size: 18px;
-letter-spacing: px;
-font-weight: 500;
-margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 #indicator {
-font-size: 14px;
-letter-spacing: px;
-font-weight: 500;
-margin-bottom: 20px;
-color: rgb(43, 43, 43);
+  font-size: 14px;
+  letter-spacing: px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(43, 43, 43);
 }
 
 #home {
-color: rgb(156, 156, 156);
+  color: rgb(156, 156, 156);
 }
 
 .side {
-padding: 15px 25px;
-border-bottom: rgb(156, 156, 156) solid 1px;
-font-size: 16px;
-font-weight: bold;
-color: rgb(43, 43, 43);
+  padding: 15px 25px;
+  border-bottom: rgb(156, 156, 156) solid 1px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
 }
 
 .side-f {
-border-bottom: rgb(156, 156, 156) solid 1px;
-padding-bottom: 25px;
-font-size: 16px;
-font-weight: bold;
-color: rgb(43, 43, 43);
+  border-bottom: rgb(156, 156, 156) solid 1px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
 }
 
 #plus {
-font-size: 13px;
-color: #5DC6AD;
+  font-size: 13px;
+  color: #5dc6ad;
 }
