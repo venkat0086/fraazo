@@ -273,3 +273,13 @@ h2 {
   border: 1px solid #5dc6ad;
   cursor: pointer;
 }
+#thanks-div {
+  width: 60%;
+  margin: auto;
+  height: 400px;
+  text-align: center;
+}
+#thanks-img {
+  width: 200px;
+  height: 200px;
+}
