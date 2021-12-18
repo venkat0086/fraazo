@@ -14,7 +14,7 @@ function display(Cart) {
     var ci = document.createElement("div");
     ci.setAttribute("id", "cart-img");
     var cimg = document.createElement("img");
-    cimg.setAttribute("src", ele.imgUrl);
+    cimg.setAttribute("src", ele.src);
 
     ci.append(cimg);
 
@@ -24,7 +24,7 @@ function display(Cart) {
     var h3 = document.createElement("h3");
     h3.textContent = ele.name;
     var par = document.createElement("p");
-    par.textContent = ele.qty;
+    par.textContent = ele.weight;
     var btn = document.createElement("button");
     btn.textContent = "Remove";
 
