@@ -200,7 +200,7 @@ footer > div{
     display: flex;
     margin: auto;
     border-bottom: rgb(226, 226, 226) solid 2px;
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     position: fixed;
     width: 100%;
   }
