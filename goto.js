@@ -1,5 +1,10 @@
 function gotoabt() {
-  window.location.href = "";
+  window.scroll({
+    top: 5320,
+    left: 0,
+    behavior: "smooth",
+  });
+  behavior: "smooth";
 }
 function gotoreg() {
   window.location.href = "signup.html";
@@ -18,7 +23,7 @@ function gotoAdd() {
   window.location.href = "frz-adrs.html";
 }
 function gotoPay() {
-  window.location.href = "";
+  window.location.href = "payment.html";
 }
 function gotoMap() {
   window.open("https://maps.google.com", "_blank");
