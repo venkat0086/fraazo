@@ -1,5 +1,10 @@
 function gotoabt() {
-  window.location.href = "";
+  window.scroll({
+    top: 5320,
+    left: 0,
+    behavior: "smooth",
+  });
+  behavior: "smooth";
 }
 function gotoreg() {
   window.location.href = "signup.html";
