@@ -1,41 +1,50 @@
-var Cart = JSON.parse(localStorage.getItem("cartData"));
+
+var sum = [];
+var Cart = JSON.parse(localStorage.getItem("cartData"))||[];
 
 console.log(Cart);
-var sum = [];
 
-Cart.map(function (ele) {
-  var cartItems = document.querySelector("#cart-items");
-  var cv = document.createElement("div");
-  cv.setAttribute("id", "cart-value");
-  var ci = document.createElement("div");
-  ci.setAttribute("id", "cart-img");
-  var cimg = document.createElement("img");
-  cimg.setAttribute("src", ele.imgUrl);
+   display(Cart);
+  function display(Cart){
+    document.querySelector("#cart-items").innerHTML="";
+  Cart.map(function (ele, index) {
 
-  ci.append(cimg);
-
-  var ct = document.createElement("div");
-  ct.setAttribute("id", "cart-text");
-
-  var h3 = document.createElement("h3");
-  h3.textContent = ele.name;
-  var par = document.createElement("p");
-  par.textContent = ele.qty;
-  var btn = document.createElement("button");
-  btn.textContent = "Remove";
-
-  ct.append(h3, par, btn);
-
-  var cp = document.createElement("div");
-  cp.setAttribute("id", "cart-price");
-  cp.textContent = "Rs. " + ele.price;
-  cv.append(ci, ct, cp);
-  cartItems.append(cv);
-});
-var total = sum.reduce(function (ac, dc) {
-  return Number(ac) + Number(dc);
-});
-document.querySelector("#totalprice").textContent = "₹ " + total;
+    var cv = document.createElement("div");
+    cv.setAttribute("id", "cart-value");
+    var ci = document.createElement("div");
+    ci.setAttribute("id", "cart-img");
+    var cimg = document.createElement("img");
+    cimg.setAttribute("src", ele.imgUrl);
+  
+    ci.append(cimg);
+  
+    var ct = document.createElement("div");
+    ct.setAttribute("id", "cart-text");
+  
+    var h3 = document.createElement("h3");
+    h3.textContent = ele.name;
+    var par = document.createElement("p");
+    par.textContent = ele.qty;
+    var btn = document.createElement("button");
+    btn.textContent = "Remove";
+    
+  
+    ct.append(h3, par, btn);
+  
+    var cp = document.createElement("div");
+    cp.setAttribute("id", "cart-price");
+    cp.textContent = "Rs. " + ele.price;
+    sum.push(ele.price);
+    cv.append(ci, ct, cp);
+      document.querySelector("#cart-items").append(cv);
+      btn.addEventListener("click",function(index){
+        del(index);
+      })
+  });
+  var total = sum.reduce(function (ac, dc) {
+    return Number(ac) + Number(dc);
+  });
+  document.querySelector("#totalprice").textContent = "₹ " + total;
 document.querySelector("#btn-cpn").addEventListener("click", dis);
 function dis() {
   var cp = document.querySelector("#cpn").value;
@@ -53,3 +62,13 @@ function dis() {
     alert("Entre valid Coupoun");
   }
 }
+
+ }
+
+
+ function del(index){
+     Cart.splice(index,1);
+    localStorage.setItem("cartData",JSON.stringify(Cart));
+    window.location.reload();
+    display(Cart);
+ }
