@@ -71,38 +71,38 @@ dryFruits.map(function (ele) {
 // data of fruits append
 fruitData = [
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN14.png",
     name: "Banana Robusta",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "29",
   },
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png",
     name: "Banana Elaichi/ Yellaki",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "39",
   },
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FCHI13.png",
     name: "Chikoo",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "49",
   },
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FGRA42.png",
     name: "Grapes Green",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "70",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/233/original/data?1609860341",
     name: "Grapes Black",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "90",
   },
 ];
@@ -110,7 +110,7 @@ fruitData.map(function (ele) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
-  img.setAttribute("src", ele.imgUrl);
+  img.setAttribute("src", ele.src);
 
   var nameBox = document.createElement("div");
   nameBox.setAttribute("class", "namebox");
@@ -124,7 +124,7 @@ fruitData.map(function (ele) {
   var priceBox = document.createElement("div");
   var weight = document.createElement("span");
   weight.setAttribute("class", "weight");
-  weight.innerText = ele.qty;
+  weight.innerText = ele.weight;
   var price = document.createElement("span");
   price.setAttribute("class", "price");
   price.innerText = "Rs. " + ele.price;
@@ -215,24 +215,24 @@ veggie.map(function (ele) {
 // data append for hydroponics
 hydroData = [
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670",
     name: "Celery(Hydroponics)",
-    qty: "15-200Gm",
+    weight: "15-200Gm",
     price: "107 ",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/631/original/data?1635766646",
     name: "Mixed lettuice (Hydroponics)",
-    qty: "1 punnet (approx 10gm)",
+    weight: "1 punnet (approx 10gm)",
     price: "69",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/003/103/original/data?1639301565",
     name: "Kale Curly (Aquaponics)",
-    qty: "200Gm",
+    weight: "200Gm",
     price: "129",
   },
 ];
@@ -240,7 +240,7 @@ hydroData.map(function (ele) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
-  img.setAttribute("src", ele.imgUrl);
+  img.setAttribute("src", ele.src);
 
   var nameBox = document.createElement("div");
   nameBox.setAttribute("class", "namebox");
@@ -254,7 +254,7 @@ hydroData.map(function (ele) {
   var priceBox = document.createElement("div");
   var weight = document.createElement("span");
   weight.setAttribute("class", "weight");
-  weight.innerText = ele.qty;
+  weight.innerText = ele.weight;
   var price = document.createElement("span");
   price.setAttribute("class", "price");
   price.innerText = "Rs. " + ele.price;
@@ -275,17 +275,17 @@ hydroData.map(function (ele) {
 
 var dairyData = [
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/394/original/data?1625864720",
     name: "ISKCON's A2 Cream Ghee",
-    qty: "225ml",
+    weight: "225ml",
     price: "375",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/367/original/data?1622452513",
     name: "ISKCON's A2 Bilano Ghee",
-    qty: "500ml",
+    weight: "500ml",
     price: "1250",
   },
 ];
@@ -294,7 +294,7 @@ dairyData.map(function (ele) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
-  img.setAttribute("src", ele.imgUrl);
+  img.setAttribute("src", ele.src);
 
   var nameBox = document.createElement("div");
   nameBox.setAttribute("class", "namebox");
@@ -308,7 +308,7 @@ dairyData.map(function (ele) {
   var priceBox = document.createElement("div");
   var weight = document.createElement("span");
   weight.setAttribute("class", "weight");
-  weight.innerText = ele.qty;
+  weight.innerText = ele.weight;
   var price = document.createElement("span");
   price.setAttribute("class", "price");
   price.innerText = "Rs. " + ele.price;
@@ -328,24 +328,24 @@ dairyData.map(function (ele) {
 // appending the herb data
 herbData = [
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/419/original/data?1635147438",
     name: "Colocasia Leaves",
-    qty: "1pcs",
+    weight: "1pcs",
     price: "4",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/602/original/data?1635155510",
     name: "Betel Leafs",
-    qty: "12 pcs",
+    weight: "12 pcs",
     price: "21",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/127/original/data?1603884053",
     name: "Masala Combo",
-    qty: "12 Pkt",
+    weight: "12 Pkt",
     price: "13",
   },
 ];
@@ -354,7 +354,7 @@ herbData.map(function (ele) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
-  img.setAttribute("src", ele.imgUrl);
+  img.setAttribute("src", ele.src);
 
   var nameBox = document.createElement("div");
   nameBox.setAttribute("class", "namebox");
@@ -368,7 +368,7 @@ herbData.map(function (ele) {
   var priceBox = document.createElement("div");
   var weight = document.createElement("span");
   weight.setAttribute("class", "weight");
-  weight.innerText = ele.qty;
+  weight.innerText = ele.weight;
   var price = document.createElement("span");
   price.setAttribute("class", "price");
   price.innerText = "Rs. " + ele.price;
@@ -390,36 +390,36 @@ herbData.map(function (ele) {
 bestDeal = [
   {
     name: "Sweet Corn",
-    imgUrl: "https://i.postimg.cc/pLxL0vgg/sweet-corn.png",
+    src: "https://i.postimg.cc/pLxL0vgg/sweet-corn.png",
     price: "14",
-    qty: "1 pc",
+    weight: "1 pc",
   },
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FGRA42.png",
     name: "Grapes Green",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "70",
   },
   {
     name: "Cashew - 100gm",
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/577/original/data?1635085485",
     price: "99",
-    qty: "100 gms",
+    weight: "100 gms",
   },
   {
-    imgUrl:
+    src:
       "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FGRA42.png",
     name: "Grapes Green",
-    qty: "1 kg",
+    weight: "1 kg",
     price: "70",
   },
   {
-    imgUrl:
+    src:
       "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670",
     name: "Celery(Hydroponics)",
-    qty: "15-200Gm",
+    weight: "15-200Gm",
     price: "107 ",
   },
 ];
@@ -427,7 +427,7 @@ bestDeal.map(function (ele) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
-  img.setAttribute("src", ele.imgUrl);
+  img.setAttribute("src", ele.src);
 
   var nameBox = document.createElement("div");
   nameBox.setAttribute("class", "namebox");
@@ -441,7 +441,7 @@ bestDeal.map(function (ele) {
   var priceBox = document.createElement("div");
   var weight = document.createElement("span");
   weight.setAttribute("class", "weight");
-  weight.innerText = ele.qty;
+  weight.innerText = ele.weight;
   var price = document.createElement("span");
   price.setAttribute("class", "price");
   price.innerText = "Rs. " + ele.price;
