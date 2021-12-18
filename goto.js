@@ -18,7 +18,7 @@ function gotoAdd() {
   window.location.href = "frz-adrs.html";
 }
 function gotoPay() {
-  window.location.href = "";
+  window.location.href = "payment.html";
 }
 function gotoMap() {
   window.open("https://maps.google.com", "_blank");
