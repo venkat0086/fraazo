@@ -1,45 +1,42 @@
+function render(data) {
+  var display = document.querySelector("#display");
+  display.innerHTML = "";
+  data.map(function (ele) {
+    var div = document.createElement("div");
 
-function render(data){
-  var display = document.querySelector('#display');
-  display.innerHTML = '';
-  data.map(function(ele){
+    var img = document.createElement("img");
+    img.setAttribute("src", ele.src);
 
-      var div = document.createElement('div');
+    var nameBox = document.createElement("div");
+    nameBox.setAttribute("class", "namebox");
+    var name = document.createElement("span");
+    name.setAttribute("class", "name");
+    name.innerText = ele.name;
+    nameBox.append(name);
 
-      var img = document.createElement('img');
-      img.setAttribute('src',ele.src);
+    var botBox = document.createElement("div");
+    botBox.setAttribute("class", "botbox");
+    var priceBox = document.createElement("div");
+    var weight = document.createElement("span");
+    weight.setAttribute("class", "weight");
+    weight.innerText = ele.weight;
+    var price = document.createElement("span");
+    price.setAttribute("class", "price");
+    price.innerText = "₹ " + ele.price;
+    var br = document.createElement("br");
+    priceBox.append(weight, br, price);
+    var btn = document.createElement("div");
+    btn.setAttribute("class", "btn");
+    btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
+    botBox.append(priceBox, btn);
 
-      var nameBox = document.createElement('div');
-      nameBox.setAttribute('class', 'namebox');
-      var name = document.createElement('span');
-      name.setAttribute('class', 'name')
-      name.innerText = ele.name;
-      nameBox.append(name);
-
-      var botBox = document.createElement('div');
-      botBox.setAttribute('class','botbox')
-      var priceBox = document.createElement('div');
-      var weight = document.createElement('span');
-      weight.setAttribute('class', 'weight')
-      weight.innerText = ele.weight;
-      var price = document.createElement('span');
-      price.setAttribute('class', 'price')
-      price.innerText = '₹ '+ ele.price;
-      var br = document.createElement('br');
-      priceBox.append(weight, br, price);
-      var btn = document.createElement('div');
-      btn.setAttribute('class', 'btn');
-      btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
-      botBox.append(priceBox, btn)
-
-      
-      div.append(img,nameBox,botBox);
-      display.append(div);
-  })
+    div.append(img, nameBox, botBox);
+    display.append(div);
+  });
 }
 
-function renderVeggi(){
-  var category = document.getElementById('category');
+function renderVeggi() {
+  var category = document.getElementById("category");
   category.innerText = "Vegetables ";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Vegetables";
@@ -47,8 +44,8 @@ function renderVeggi(){
   render(veggie);
 }
 
-function renderDry(){
-  var category = document.getElementById('category');
+function renderDry() {
+  var category = document.getElementById("category");
   category.innerText = "Dry Fruits";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Dry Fruits";
@@ -56,8 +53,8 @@ function renderDry(){
   render(dryFruits);
 }
 
-function renderFruits(){
-  var category = document.getElementById('category');
+function renderFruits() {
+  var category = document.getElementById("category");
   category.innerText = "Fruits";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Fruits";
@@ -65,8 +62,8 @@ function renderFruits(){
   render(fruits);
 }
 
-function renderHydroponics(){
-  var category = document.getElementById('category');
+function renderHydroponics() {
+  var category = document.getElementById("category");
   category.innerText = "Hydroponics";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Hydroponics";
@@ -74,8 +71,8 @@ function renderHydroponics(){
   render(hydro);
 }
 
-function renderHerbs(){
-  var category = document.getElementById('category');
+function renderHerbs() {
+  var category = document.getElementById("category");
   category.innerText = "Herbs";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Herbs";
@@ -83,8 +80,8 @@ function renderHerbs(){
   render(herbs);
 }
 
-function renderDairy(){
-  var category = document.getElementById('category');
+function renderDairy() {
+  var category = document.getElementById("category");
   category.innerText = "Dairy Products";
   var type = document.getElementById("veggi_type");
   type.innerText = "All Dairy Products";
@@ -95,61 +92,40 @@ render(herbs);
 
 // Aside
 
-var side = document.querySelectorAll('.side');
-for(var i=0; i<side.length; i++){
-  side[i].addEventListener('click', function(event){
-  var content = document.querySelectorAll('.content');
-  for(var j=0; j<content.length; j++){
-      content[j].style.display = 'none';
-  }
-      var ele = event.target.nextElementSibling;
+var side = document.querySelectorAll(".side");
+for (var i = 0; i < side.length; i++) {
+  side[i].addEventListener("click", function (event) {
+    var content = document.querySelectorAll(".content");
+    for (var j = 0; j < content.length; j++) {
+      content[j].style.display = "none";
+    }
+    var ele = event.target.nextElementSibling;
 
-  if (ele.style.display === "block") {
-    ele.style.display = "none";
-  } else {
-    ele.style.display = "block";
-  }
-});
+    if (ele.style.display === "block") {
+      ele.style.display = "none";
+    } else {
+      ele.style.display = "block";
+    }
+  });
 }
-
-
 
 //---------------------------------------------------Nav---------
 
-function gotoabt() {
-  window.location.href = "";
-}
-function gotoreg() {
-  window.location.href = "signup.html";
-}
-function gotocart() {
-  window.location.href = "";
-}
-function gotologin() {
-  window.location.href = "signin.html";
-}
-function gotoindex(){
-  window.location.href = "index.html";
-}
-
-
-
-
-function gotovegetable(){
+function gotovegetable() {
   window.location.href = "vegetables.html";
 }
-function gotoDairy(){
+function gotoDairy() {
   window.location.href = "dairy.html";
 }
-function gotoDry(){
+function gotoDry() {
   window.location.href = "dryFruits.html";
 }
-function gotoHydro(){
+function gotoHydro() {
   window.location.href = "hydroponics.html";
 }
-function gotofruits(){
+function gotofruits() {
   window.location.href = "fruits.html";
 }
-function gotoherbs(){
+function gotoherbs() {
   window.location.href = "herbs.html";
 }
