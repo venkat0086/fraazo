@@ -236,6 +236,7 @@ veggie.map(function (ele, index) {
 });
 
 function add(index){
+  console.log("here"+index);
   cart.push(veggie[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
@@ -305,6 +306,7 @@ hydroData.map(function (ele, index) {
 
 
 function add(index){
+  console.log("here"+index);
   cart.push(hydroData[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
@@ -368,6 +370,7 @@ dairyData.map(function (ele, index) {
   //document.querySelectorAll("#items").append(div);
 });
 function add(index){
+  console.log("here"+index);
   cart.push(dairyData[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
@@ -435,6 +438,7 @@ herbData.map(function (ele,index) {
   //document.querySelectorAll("#items").append(div);
 });
 function add(index){
+  console.log("here"+index);
   cart.push(herbData[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
@@ -516,6 +520,7 @@ bestDeal.map(function (ele, index ) {
   //document.querySelectorAll("#items").append(div);
 });
 function add(index){
+  console.log("here"+index);
   cart.push(bestDeal[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
