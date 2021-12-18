@@ -1,3 +1,5 @@
+var cart = JSON.parse(localStorage.getItem("cartData")) || [];
+var df=JSON.parse(localStorage.getItem("dfdata"))||[];
 var dryFruits = [
   {
     name: "Cashew - 100gm",
@@ -34,7 +36,7 @@ var dryFruits = [
     weight: "100 gms",
   },
 ];
-var cart = JSON.parse(localStorage.getItem("cartData")) || [];
+
 dryFruits.map(function (ele, index) {
   var div = document.createElement("div");
 
@@ -77,9 +79,11 @@ dryFruits.map(function (ele, index) {
 function add(index) {
   console.log("here" + index);
   cart.push(dryFruits[index]);
-  localStorage.setItem("cartData", JSON.stringify(cart));
+   localStorage.setItem("cartData", JSON.stringify(cart));
 }
+console.log(df);
 // data of fruits append
+var cart = JSON.parse(localStorage.getItem("cartData")) || [];
 fruitData = [
   {
     src: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN14.png",
