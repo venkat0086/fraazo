@@ -28,42 +28,9 @@ Cart.map(function (ele) {
 
   var cp = document.createElement("div");
   cp.setAttribute("id", "cart-price");
-  cp.textContent = ele.price;
+  cp.textContent = "Rs. " + ele.price;
   cv.append(ci, ct, cp);
   cartItems.append(cv);
-  // var div = document.createElement("div");
-
-  // var img = document.createElement("img");
-  // img.setAttribute("src", ele.imgUrl);
-
-  // var nameBox = document.createElement("div");
-  // nameBox.setAttribute("class", "namebox");
-  // var name = document.createElement("span");
-  // name.setAttribute("class", "name");
-  // name.innerText = ele.name;
-  // nameBox.append(name);
-
-  // var botBox = document.createElement("div");
-  // botBox.setAttribute("class", "botbox");
-  // var priceBox = document.createElement("div");
-  // var weight = document.createElement("span");
-  // weight.setAttribute("class", "weight");
-  // weight.innerText = ele.qty;
-  // var price = document.createElement("span");
-  // price.setAttribute("class", "price");
-  // price.innerText = "Rs. " + ele.price;
-  // sum.push(ele.price);
-  // var br = document.createElement("br");
-  // priceBox.append(weight, br, price);
-  // var btn = document.createElement("div");
-  // btn.setAttribute("class", "btn");
-  // btn.innerHTML = "Remove";
-  // botBox.append(priceBox, btn);
-
-  // var display = document.querySelector("#cart-main");
-  // div.append(img, nameBox, botBox);
-  // display.append(div);
-  //document.querySelectorAll("#items").append(div);
 });
 var total = sum.reduce(function (ac, dc) {
   return Number(ac) + Number(dc);
