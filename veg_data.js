@@ -285,26 +285,58 @@ function render(data){
 }
 
 function renderVeggi(){
+    var category = document.getElementById('category');
+    category.innerText = "Vegetables ";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Vegetables";
+
     render(veggie);
 }
 
 function renderDry(){
+    var category = document.getElementById('category');
+    category.innerText = "Dry Fruits";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Dry Fruits";
+
     render(dryFruits);
 }
 
 function renderFruits(){
+    var category = document.getElementById('category');
+    category.innerText = "Fruits";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Fruits";
+
     render(fruits);
 }
+
 function renderHydroponics(){
+    var category = document.getElementById('category');
+    category.innerText = "Hydroponics";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Hydroponics";
+
     render(hydro);
 }
+
 function renderHerbs(){
+    var category = document.getElementById('category');
+    category.innerText = "Herbs";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Herbs";
+
     render(herbs);
 }
+
 function renderDairy(){
+    var category = document.getElementById('category');
+    category.innerText = "Dairy Products";
+    var type = document.getElementById("veggi_type");
+    type.innerText = "All Dairy Products";
+
     render(dairy);
 }
-render(dryFruits);
 
 // Aside
 
