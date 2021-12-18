@@ -15,8 +15,9 @@ var dairyData = [
   },
 ];
 localStorage.setItem("dairyData", JSON.stringify(dairyData));
+var cart= JSON.parse(localStorage.getItem("cartData"))||[];
 
-dairyData.map(function (ele) {
+dairyData.map(function (ele, index) {
   var contain = document.querySelector("#items");
   var divProd = document.createElement("div");
 
@@ -42,9 +43,18 @@ dairyData.map(function (ele) {
   var btn = document.createElement("button");
   btn.textContent = "ADD";
   btn.setAttribute("id", "addBtn");
+  
+ btn.addEventListener("click", function(){
+  add(index);
+});
+
 
   minText.append(quantity, price, btn);
   textContain.append(h4, minText);
   divProd.append(divImg, textContain);
   contain.append(divProd);
 });
+function add(index){
+  cart.push(dairyData[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
