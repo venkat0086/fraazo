@@ -148,6 +148,9 @@ a{
     margin-top: 10px;
     border-bottom: rgb(231, 230, 230) solid 1px;
 }
+.content > div :hover{
+    color: rgb(97, 96, 96);
+}
 .arrow{
     padding-right: 10px;
     padding-left: 20px;
@@ -215,7 +218,7 @@ footer > div{
     font-size: 16px;
     font-weight: bold;
   }
-  #nav_img{
+  #logoimg{
       height: 100%;
   }
   #image{
