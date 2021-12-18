@@ -51,7 +51,7 @@ function display(Cart) {
     var cp = document.querySelector("#cpn").value;
     console.log(cp);
 
-    if (cp == "abc20") {
+    if (cp == "FLAT20") {
       var discount = total * 0.2;
       console.log(discount);
       document.querySelector("#disc-price").textContent = "-" + discount;
