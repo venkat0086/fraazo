@@ -33,8 +33,9 @@ var dryFruits = [
     price: "186",
     weight: "100 gms",
   },
-];
-dryFruits.map(function (ele) {
+]; 
+var cart= JSON.parse(localStorage.getItem("cartData"))||[];
+dryFruits.map(function (ele, index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -61,6 +62,10 @@ dryFruits.map(function (ele) {
   var btn = document.createElement("div");
   btn.setAttribute("class", "btn");
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
+  
+ btn.addEventListener("click", function(){
+  add(index);
+});
   botBox.append(priceBox, btn);
 
   var display = document.querySelector("#itemsdry");
@@ -68,6 +73,12 @@ dryFruits.map(function (ele) {
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+
+function add(index){
+  console.log("here"+index);
+  cart.push(dryFruits[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
 // data of fruits append
 fruitData = [
   {
@@ -106,7 +117,7 @@ fruitData = [
     price: "90",
   },
 ];
-fruitData.map(function (ele) {
+fruitData.map(function (ele , index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -133,13 +144,22 @@ fruitData.map(function (ele) {
   var btn = document.createElement("div");
   btn.setAttribute("class", "btn");
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
+
   botBox.append(priceBox, btn);
+  btn.addEventListener("click", function(){
+    add(index);
+});
 
   var display = document.querySelector("#itemsf");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+function add(index){ 
+  console.log("here"+index);
+  cart.push(fruitData[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
 // data of vegetables append
 var veggie = [
   {
@@ -177,7 +197,7 @@ var veggie = [
     weight: "1 unit",
   },
 ];
-veggie.map(function (ele) {
+veggie.map(function (ele, index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -205,12 +225,20 @@ veggie.map(function (ele) {
   btn.setAttribute("class", "btn");
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
+  btn.addEventListener("click", function(){
+    add(index);
+});
 
   var display = document.querySelector("#itemsv");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+
+function add(index){
+  cart.push(veggie[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
 
 // data append for hydroponics
 hydroData = [
@@ -236,7 +264,7 @@ hydroData = [
     price: "129",
   },
 ];
-hydroData.map(function (ele) {
+hydroData.map(function (ele, index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -264,12 +292,23 @@ hydroData.map(function (ele) {
   btn.setAttribute("class", "btn");
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
+  btn.addEventListener("click", function(){
+    add(index);
+});
+
 
   var display = document.querySelector("#itemsh");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+
+
+function add(index){
+  cart.push(hydroData[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
+
 
 // appending the data of dairy
 
@@ -290,7 +329,7 @@ var dairyData = [
   },
 ];
 
-dairyData.map(function (ele) {
+dairyData.map(function (ele, index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -319,11 +358,19 @@ dairyData.map(function (ele) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
 
+  btn.addEventListener("click", function(){
+    add(index);
+});
+
   var display = document.querySelector("#itemsd");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+function add(index){
+  cart.push(dairyData[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
 
 // appending the herb data
 herbData = [
@@ -350,7 +397,7 @@ herbData = [
   },
 ];
 
-herbData.map(function (ele) {
+herbData.map(function (ele,index) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -378,12 +425,20 @@ herbData.map(function (ele) {
   btn.setAttribute("class", "btn");
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
+  btn.addEventListener("click", function(){
+    add(index);
+});
 
   var display = document.querySelector("#itemsherb");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+function add(index){
+  cart.push(herbData[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
+
 
 // appending the best deal data
 
@@ -423,7 +478,7 @@ bestDeal = [
     price: "107 ",
   },
 ];
-bestDeal.map(function (ele) {
+bestDeal.map(function (ele, index ) {
   var div = document.createElement("div");
 
   var img = document.createElement("img");
@@ -452,8 +507,15 @@ bestDeal.map(function (ele) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
 
+  btn.addEventListener("click", function(){
+    add(index);
+});
   var display = document.querySelector("#items");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
+function add(index){
+  cart.push(bestDeal[index]);
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
+}
