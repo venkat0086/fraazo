@@ -493,36 +493,39 @@ img {
   font-size: 13px;
   color: #5dc6ad;
 }
-#belownav{
+#belownav {
   height: 400px;
   color: white;
   background-color: #165241;
   border: 2px solid #165241;
-
 }
-#belownav>p{
-  line-height: 25px; color: #9fb8b1
+#belownav > p {
+  line-height: 25px;
+  color: #9fb8b1;
 }
-#up{
-  margin-top: 100px
+#up {
+  margin-top: 100px;
 }
-#about>div>div>p{
-  color: #9fb8b1
+#about > div > div > p {
+  color: #9fb8b1;
 }
-.a1{
-  text-align: left; margin-top: 100px
+.a1 {
+  text-align: left;
+  margin-top: 100px;
 }
-.a1>h3{
-  color:white
+.a1 > h3 {
+  color: white;
 }
-.d1{
-  color: #9fb8b1; text-align: left
+.d1 {
+  color: #9fb8b1;
+  text-align: left;
 }
-#bgcolor{
-  height: 50px; border: 3px solid #165241; background-color: #165241
+#bgcolor {
+  height: 50px;
+  border: 3px solid #165241;
+  background-color: #165241;
 }
-#bgcolor>h3{
+#bgcolor > h3 {
   color: white;
   text-align: center;
 }
-
