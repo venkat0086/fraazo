@@ -505,5 +505,14 @@ bestDeal.map(function (ele, index) {
 function add(index) {
   console.log("here" + index);
   cart.push(bestDeal[index]);
-  localStorage.setItem("cartData", JSON.stringify(cart));
+//HEAD
+  localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
+
+function gotoproduct(){
+  window.location.href = "product.html";
+}
+//----------------
+  localStorage.setItem("cartData", JSON.stringify(cart));
+
+//----------29670c38cf85f90005d20f6f8bc375b8d6357cfa
