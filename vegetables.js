@@ -91,6 +91,7 @@ function renderDairy(){
 
     render(dairy);
 }
+render(veggie);
 
 // Aside
 
@@ -126,4 +127,29 @@ function gotoabt() {
   }
   function gotologin() {
     window.location.href = "signin.html";
+  }
+  function gotoindex(){
+    window.location.href = "index.html";
+  }
+
+
+
+
+  function gotovegetable(){
+    window.location.href = "vegetables.html";
+  }
+  function gotoDairy(){
+    window.location.href = "dairy.html";
+  }
+  function gotoDry(){
+    window.location.href = "dryFruits.html";
+  }
+  function gotoHydro(){
+    window.location.href = "hydroponics.html";
+  }
+  function gotofruits(){
+    window.location.href = "fruits.html";
+  }
+  function gotoherbs(){
+    window.location.href = "herbs.html";
   }

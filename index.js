@@ -524,3 +524,7 @@ function add(index){
   cart.push(bestDeal[index]);
   localStorage.setItem("cartData",JSON.stringify(cart)); 
 }
+
+function gotoproduct(){
+  window.location.href = "product.html";
+}
