@@ -1,4 +1,5 @@
 var sum = [];
+var ads=[];
 var Cart = JSON.parse(localStorage.getItem("cartData")) || [];
 document.querySelector("#cart-no").textContent = Cart.length;
 
@@ -42,7 +43,8 @@ function display(Cart) {
   var total = sum.reduce(function (ac, dc) {
     return Number(ac) + Number(dc);
   });
-  document.querySelector("#totalprice").textContent = "₹ " + total;
+ var t= document.querySelector("#totalprice").textContent = "₹ " + total;
+    ads.push(t);
   document.querySelector("#btn-cpn").addEventListener("click", dis);
   function dis() {
     var cp = document.querySelector("#cpn").value;
@@ -53,7 +55,10 @@ function display(Cart) {
       console.log(discount);
       document.querySelector("#disc-price").textContent = "-" + discount;
       var tp = total - discount;
-
+      ads.push(discount);
+      ads.push(tp);
+       localStorage.setItem("ads",JSON.stringify(ads));
+       console.log(ads);
       document.querySelector("#tp").textContent = "₹ " + tp;
       document.querySelector("#final-amt").textContent = "₹ " + tp;
     } else {
