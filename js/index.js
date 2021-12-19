@@ -66,7 +66,7 @@ dryFruits.map(function (ele, index) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
 
   btn.addEventListener("click", function () {
-    add(index);
+    add1(index);
   });
   botBox.append(priceBox, btn);
 
@@ -76,7 +76,7 @@ dryFruits.map(function (ele, index) {
   //document.querySelectorAll("#items").append(div);
 });
 
-function add(index) {
+function add1(index) {
   console.log("here" + index);
   cart.push(dryFruits[index]);
    localStorage.setItem("cartData", JSON.stringify(cart));
@@ -146,7 +146,7 @@ fruitData.map(function (ele, index) {
 
   botBox.append(priceBox, btn);
   btn.addEventListener("click", function () {
-    add(index);
+    add2(index);
   });
 
   var display = document.querySelector("#itemsf");
@@ -154,7 +154,7 @@ fruitData.map(function (ele, index) {
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
-function add(index) {
+function add2(index) {
   console.log("here" + index);
   cart.push(fruitData[index]);
   localStorage.setItem("cartData", JSON.stringify(cart));
@@ -225,7 +225,7 @@ veggie.map(function (ele, index) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
   btn.addEventListener("click", function () {
-    add(index);
+    add3(index);
   });
 
   var display = document.querySelector("#itemsv");
@@ -234,7 +234,7 @@ veggie.map(function (ele, index) {
   //document.querySelectorAll("#items").append(div);
 });
 
-function add(index) {
+function add3(index) {
   console.log("here" + index);
   cart.push(veggie[index]);
   localStorage.setItem("cartData", JSON.stringify(cart));
@@ -290,7 +290,7 @@ hydroData.map(function (ele, index) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
   btn.addEventListener("click", function () {
-    add(index);
+    add4(index);
   });
 
   var display = document.querySelector("#itemsh");
@@ -299,7 +299,7 @@ hydroData.map(function (ele, index) {
   //document.querySelectorAll("#items").append(div);
 });
 
-function add(index) {
+function add4(index) {
   console.log("here" + index);
   cart.push(hydroData[index]);
   localStorage.setItem("cartData", JSON.stringify(cart));
@@ -352,7 +352,7 @@ dairyData.map(function (ele, index) {
   botBox.append(priceBox, btn);
 
   btn.addEventListener("click", function () {
-    add(index);
+    add5(index);
   });
 
   var display = document.querySelector("#itemsd");
@@ -360,7 +360,7 @@ dairyData.map(function (ele, index) {
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
-function add(index) {
+function add5(index) {
   console.log("here" + index);
   cart.push(dairyData[index]);
   localStorage.setItem("cartData", JSON.stringify(cart));
@@ -417,7 +417,7 @@ herbData.map(function (ele, index) {
   btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
   botBox.append(priceBox, btn);
   btn.addEventListener("click", function () {
-    add(index);
+    add6(index);
   });
 
   var display = document.querySelector("#itemsherb");
@@ -425,7 +425,7 @@ herbData.map(function (ele, index) {
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
-function add(index) {
+function add6(index) {
   console.log("here" + index);
   cart.push(herbData[index]);
   localStorage.setItem("cartData", JSON.stringify(cart));
@@ -497,14 +497,14 @@ bestDeal.map(function (ele, index) {
   botBox.append(priceBox, btn);
 
   btn.addEventListener("click", function () {
-    add(index);
+    add7(index);
   });
   var display = document.querySelector("#items");
   div.append(img, nameBox, botBox);
   display.append(div);
   //document.querySelectorAll("#items").append(div);
 });
-function add(index) {
+function add7(index) {
   console.log("here" + index);
   cart.push(bestDeal[index]);
 //HEAD
