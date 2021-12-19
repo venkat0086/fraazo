@@ -435,6 +435,12 @@ function add(index) {
 
 bestDeal = [
   {
+    src: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670",
+    name: "Celery(Hydroponics)",
+    weight: "15-200Gm",
+    price: "107 ",
+  },
+  {
     name: "Sweet Corn",
     src: "https://i.postimg.cc/pLxL0vgg/sweet-corn.png",
     price: "14",
@@ -453,17 +459,13 @@ bestDeal = [
     weight: "100 gms",
   },
   {
-    src: "https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FGRA42.png",
-    name: "Grapes Green",
-    weight: "1 kg",
-    price: "70",
+    name: "Mushroom",
+    src: "https://i.postimg.cc/XJXM21NM/mushroom.png",
+    price: "37",
+    weight: "1 unit",
   },
-  {
-    src: "https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/169/original/data?1599847670",
-    name: "Celery(Hydroponics)",
-    weight: "15-200Gm",
-    price: "107 ",
-  },
+  
+ 
 ];
 bestDeal.map(function (ele, index) {
   var div = document.createElement("div");

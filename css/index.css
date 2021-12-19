@@ -248,7 +248,7 @@
 #specification {
   display: grid;
   width: 90%;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 330px);
   height: 580px;
   grid-gap: 10px;
 }
@@ -494,14 +494,20 @@ img {
   color: #5dc6ad;
 }
 #belownav {
-  height: 400px;
+  height: 500px;
   color: white;
   background-color: #165241;
   border: 2px solid #165241;
 }
+#belownav > h1{
+  margin-left: 40px;
+  font-family: Quicksand, sans-serif;;
+}
 #belownav > p {
   line-height: 25px;
   color: #9fb8b1;
+  margin: 40px;
+  justify-content: left;
 }
 #up {
   margin-top: 100px;
