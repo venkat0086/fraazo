@@ -30,9 +30,18 @@ function render(data) {
     btn.innerHTML = '<i class="fas fa-cart-plus"></i>&nbsp ADD';
     botBox.append(priceBox, btn);
 
+    btn.addEventListener("click", function () {
+      add(index);
+    });
     div.append(img, nameBox, botBox);
     display.append(div);
   });
+}
+
+function add(index) {
+  console.log("here" + index);
+  cart.push(dryFruits[index]);
+   localStorage.setItem("cartData", JSON.stringify(cart));
 }
 
 function renderVeggi() {
@@ -110,22 +119,3 @@ for (var i = 0; i < side.length; i++) {
 }
 
 //---------------------------------------------------Nav---------
-
-function gotovegetable() {
-  window.location.href = "vegetables.html";
-}
-function gotoDairy() {
-  window.location.href = "dairy.html";
-}
-function gotoDry() {
-  window.location.href = "dryFruits.html";
-}
-function gotoHydro() {
-  window.location.href = "hydroponics.html";
-}
-function gotofruits() {
-  window.location.href = "fruits.html";
-}
-function gotoherbs() {
-  window.location.href = "herbs.html";
-}
