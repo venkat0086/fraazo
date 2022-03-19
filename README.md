@@ -19,9 +19,9 @@ All the image and icon links have been taken from the main website ( https://fra
 ## Snapshots 📷
 - Landing Page (Home Page):
   
-<!-- ![Home Page](https://user-images.githubusercontent.com/35700009/129468592-4bcc5b60-447d-4555-a8f5-925fe4562c54.png)
+![Home Page](https://github.com/venkat0086/my-portfolio/blob/master/images/fraazo.png)
 
-- Category Page:
+<!-- - Category Page:
   
 ![Category Page](https://user-images.githubusercontent.com/35700009/129468620-f8ec0d8d-5878-4eb1-adb9-318a0fee9006.png)
 
