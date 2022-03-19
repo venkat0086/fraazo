@@ -46,8 +46,7 @@ All pages are not responsive yet , those pages are might not be properly visible
 
 ## Team Members and Contributors 😇 :
 
-- 👤 Venkat R
-  ![Github](https://github.com/venkat0086)
+- 👤 [Venkat R](https://github.com/venkat0086)
   
 - 👤 Sanket Patil
   Github: https://github.com/sanketpatil05
