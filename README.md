@@ -48,11 +48,8 @@ All pages are not responsive yet , those pages are might not be properly visible
 
 - 👤 [Venkat R](https://github.com/venkat0086)
   
-- 👤 Sanket Patil
-  Github: https://github.com/sanketpatil05
+- 👤 [Sanket Patil](https://github.com/sanketpatil05)
   
-- 👤 Aniket Chimurkar
-  Github: https://github.com/Aniket-Chimurkar
+- 👤 [Aniket Chimurkar](https://github.com/Aniket-Chimurkar)
   
-- 👤 Pushpendra
-  Github: https://github.com/PushpendraKPal
+- 👤 [Pushpendra](https://github.com/PushpendraKPal)
